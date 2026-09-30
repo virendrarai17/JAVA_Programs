@@ -1,0 +1,20 @@
+public class BiggerNumberInArray {
+
+    public static void main(String[] args) {
+
+        int[] numbers = { 2, 3, -8, 21, -1, 0, 1 };
+        int largest = numbers[0];
+        int smallest = numbers[0];
+
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > largest) {
+                largest = numbers[i];
+            }
+            if (numbers[i] < smallest) {
+                smallest = numbers[i];
+            }
+        }
+        System.out.println("Largest number in Array: " + largest);
+        System.out.println("Smallest number in Array: " + smallest);
+    }
+}
